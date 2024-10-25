@@ -3,7 +3,7 @@ export const ADD_TODO = "ADD_TODO"
 export const UPDATE_TODO = "UPDATE_TODO"
 export const DELETE_TODO = "DELETE_TODO"
 
-// what the action really do ?
+// what the actions really do ?
 export const add_todo = (text) =>({
     type:ADD_TODO,
     payload:{text}
