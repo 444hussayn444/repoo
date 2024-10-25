@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Poppins" , sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  background: linear-gradient(90deg,#d6fef9, #b3fff1ac);
+  padding: 20px;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.082);
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.container .todo-container{
+ padding:10px 10px;
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+ margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .todo-container .input{
+  width: 32rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: .2rem;
+  outline: none;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.082);
+  font-size: 18px;
+}
+.container .todo-container .btnadd{
+  position: relative;
+  width: 100px;
+  padding: 7px 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: .5rem;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #74EBD5 100%, #9FACE6 0%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.2s  all !important; 
+  overflow: hidden;
+
+}
+.btnadd::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition:  0.2s ease;
+  width: 100%;
+  height: 100%;
+  background-color: #74EBD5;
+  background: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); 
+}
+.btnadd:hover::before{
+  opacity: 0;
+}
+.container .tasks-container{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap:20px;
+  border-radius: 0.2rem;
+  padding: 10px;
+}
+.container .tasks-container .task{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: .5rem;
+  border-radius: 0.2rem;
+  word-break: break-all;
+  background: linear-gradient(90deg,#ffffff 100%,#69696980);
+  border: 2px solid rgba(0, 0, 0, 0.096);
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.mother{
+  display: flex;
+  gap: 5px;
+}
+
+
+.bx{
+  color: #ffffff;
+  border-radius: 100%;
+  padding:3px ;
+}
+
+.delete{
+  color: rgb(196, 9, 9) !important; 
+  cursor: pointer;
+}
+.update{
+  color: #095292;
+  cursor: pointer;
+}
+.date{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto !important;
+  margin-top: 10px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); 
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 2px 5px 3px rgba(0, 0, 0, 0.196);
+}
+
+.updatebtn{
+ background-color: #9FACE6;
+ color: whitesmoke;
+ border: none;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+padding: 3px;
+cursor: pointer;
+}
+.updatebtn:hover{
+  background-color: #9face6d0;
+
 }
