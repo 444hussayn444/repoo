@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/444hussayn444/repoo.git/static/css/main.22f4af55.css",
-    "main.js": "/444hussayn444/repoo.git/static/js/main.88149e2c.js",
-    "index.html": "/444hussayn444/repoo.git/index.html",
-    "main.22f4af55.css.map": "/444hussayn444/repoo.git/static/css/main.22f4af55.css.map",
-    "main.88149e2c.js.map": "/444hussayn444/repoo.git/static/js/main.88149e2c.js.map"
+    "main.css": "/repoo/static/css/main.22f4af55.css",
+    "main.js": "/repoo/static/js/main.88149e2c.js",
+    "index.html": "/repoo/index.html",
+    "main.22f4af55.css.map": "/repoo/static/css/main.22f4af55.css.map",
+    "main.88149e2c.js.map": "/repoo/static/js/main.88149e2c.js.map"
   },
   "entrypoints": [
     "static/css/main.22f4af55.css",
